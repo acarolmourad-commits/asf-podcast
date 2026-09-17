@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ASF Podcast — Surf feminino em áudio</title>
+<meta name="description" content="Podcast ASF: histórias, técnica e entrevistas do surf feminino para ouvir no caminho da praia. Satélite do app ASF.">
+<link rel="canonical" href="https://acarolmourad-commits.github.io/asf-podcast/">
+<style>body{font-family:system-ui,sans-serif;margin:0;background:#f5f3ff;color:#2e1065}header{background:#7c3aed;color:#fff;padding:2rem;text-align:center}nav{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;padding:1rem;background:#ede9fe}nav a{color:#6d28d9;text-decoration:none;font-size:.85rem}main{max-width:640px;margin:2rem auto;padding:0 1rem}.card{background:#fff;border-radius:16px;padding:1.5rem;margin-bottom:1rem;box-shadow:0 1px 4px rgba(0,0,0,.08)}.ep{display:flex;gap:1rem;align-items:center;padding:.8rem;border-bottom:1px solid #ede9fe}.ep button{background:#7c3aed;color:#fff;border:0;border-radius:50%;width:44px;height:44px;font-size:1.1rem;cursor:pointer;flex-shrink:0}.ep small{color:#6d28d9}footer{text-align:center;padding:2rem;color:#71717a}</style>
+</head>
+<body>
+<header><h1>ASF Podcast 🎧</h1><p>O som do surf feminino — no caminho da praia</p></header>
+<nav id="net"></nav>
+<main>
+<div class="card"><h2>🎙️ Episódios</h2><div id="eps"></div>
+<p style="font-size:.85rem;color:#6d28d9">Os episódios completos são publicados nos canais oficiais. Quer mandar sua história em áudio? Fale com a <a href="https://acarolmourad-commits.github.io/asf-comunidade/">Comunidade</a>.</p></div>
+<div class="card"><p>🚗 Ouvindo a caminho do pico? Veja o <a href="https://acarolmourad-commits.github.io/asf-carona/">ASF Carona</a> e a <a href="https://acarolmourad-commits.github.io/asf-previsao/">Previsão</a> antes de sair. Novo episódio toda semana — acompanhe nos <a href="https://acarolmourad-commits.github.io/asf-eventos/">Eventos</a>.</p></div>
+</main>
+<footer>ASF Podcast — satélite do <a href="https://acarolmourad-commits.github.io/asf-app/">app ASF</a></footer>
+<script>
+const sites=[["asf-app","App ASF"],["asf-praias","Praias"],["asf-previsao","Previsão"],["asf-treino","Treino"],["asf-eventos","Eventos"],["asf-comunidade","Comunidade"],["asf-historia","História"],["asf-filmes","Filmes"],["asf-carona","Carona"],["asf-quiz","Quiz"],["asf-mental","Mental"],["asf-galeria","Galeria"],["asf-diario","Diário"],["asf-viagens","Viagens"],["asf-desafios","Desafios"]];
+document.getElementById('net').innerHTML=sites.map(s=>`<a href="https://acarolmourad-commits.github.io/${s[0]}/">${s[1]}</a>`).join('');
+const EPS=[["Ep. 01 — Começando do zero: a primeira onda","Iniciação","12 min"],["Ep. 02 — Etiqueta no pico sem estresse","Segurança","15 min"],["Ep. 03 — Respiração e calma no wipeout","Apneia","10 min"],["Ep. 04 — Pioneiras: as mulheres que abriram caminho","História","18 min"],["Ep. 05 — Nutrição de pré e pós-sessão","Saúde","14 min"]];
+document.getElementById('eps').innerHTML=EPS.map((e,i)=>`<div class="ep"><button onclick="alert('🎧 ${e[0]} — em breve no Spotify e no app ASF!')">▶</button><div><b>${e[0]}</b><br><small>${e[1]} · ${e[2]}</small></div></div>`).join('');
+</script>
+</body>
+</html>
