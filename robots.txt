@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://acarolmourad-commits.github.io/asf-podcast/sitemap.xml
+
+Sitemap: https://podcast.asf.surf/sitemap.xml
